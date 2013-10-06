@@ -7,7 +7,6 @@ include("../resources/Includes/FusionCharts.php");
 <HTML>
 <HEAD>
         <TITLE>
-        Graficas hijas de puta
         </TITLE>
         <?php
         //You need to include the following JS file, if you intend to embed the chart using JavaScript.
@@ -28,8 +27,8 @@ include("../resources/Includes/FusionCharts.php");
 <BODY>
 
 <CENTER>
-<h2>Mierda Puta</h2>
-<h4>Jodada</h4>
+<h2></h2>
+<h4></h4>
 <?php
         
         //This page demonstrates the ease of generating charts using FusionCharts PHP Class.
@@ -40,7 +39,7 @@ include("../resources/Includes/FusionCharts.php");
         
         
         //Create the chart - Column 3D Chart with data from Data/Data.xml
-        echo renderChart("../resources/FusionCharts/FCF_Column3D.swf", "Main.php", "", "myFirst", 600, 300, false, false);
+        echo renderChart("../resources/FusionCharts/FCF_Column3D.swf", "Main.php", "", "myFirst", 700, 500, false, false);
 ?>
 <BR><BR>
 </CENTER>

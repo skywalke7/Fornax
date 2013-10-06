@@ -17,8 +17,9 @@ class Data {
  	$FC->setSwfPath("../../FusionCharts/");
 		
 	# Store Chart attributes in a variable
-	$strParam="caption=Monthly Unit Sales;xAxisName=Month;yAxisName=Transactions number;decimalPrecision=0; formatNumberScale=0;showNames=1;setAdaptiveYMin=1;";
+	$strParam="caption=Monthly Unit Sales;xAxisName=Month;yAxisName=Transactions number;decimalPrecision=0; formatNumberScale=0;showNames=1;setAdaptiveYMin=1;baseFont=verdana;baseFontSize=14";
  	#  Set chart attributes
+
  	$FC->setChartParams($strParam);
         
         for ($i = 0; $i < count($arrayWSTimes); $i++) {
@@ -26,7 +27,8 @@ class Data {
         }
 	
 	#add chart data values and category names
-	//$FC->addChartData("462","name=Jan");
+
+	//FC->addChartData("462","name=Jan");
 	//$FC->addChartData("857","name=Feb");
 	//$FC->addChartData("671","name=Mar");
 	//$FC->addChartData("494","name=Apr");
