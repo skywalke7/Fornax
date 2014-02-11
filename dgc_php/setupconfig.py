@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
 import os.path
-from commandcreationexception import CommandCreationException
+from excptns.commandcreationexception import CommandCreationException
 import argparse
-from logger import Logger
+from config.log.logger import Logger
 
 class ArgumentLogger():
     def __init__(self):
@@ -29,7 +29,7 @@ try:
 except IOError:
     if not os.path.isfile(path):
         try:
-            raise CommandCreationException("could not create command. Permission denied.")
+            raise CommandCreationException("could not create command... [dgc]. Permission denied. \n")
         except CommandCreationException:
             pass
-
+            
